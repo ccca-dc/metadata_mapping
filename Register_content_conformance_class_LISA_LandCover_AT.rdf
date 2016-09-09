@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:adms = "http://www.w3.org/ns/adms#"
+	xmlns:dcat = "http://www.w3.org/ns/dcat#"
+	xmlns:dct  = "http://purl.org/dc/terms/"
+	xmlns:foaf = "http://xmlns.com/foaf/0.1/"
+	xmlns:rdf  = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:skos = "http://www.w3.org/2004/02/skos/core#"
+	xmlns:voaf = "http://purl.org/vocommons/voaf#"
+>
+<!-- ## Register descriptor: Content Conformance Class ## -->
+
+<!-- URI / URL of the register -->
+	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+
+<!-- Reference to the registry operating the register -->
+	<dct:isPartOf>
+		<dcat:Catalog rdf:about="http://registry.inspire.gv.at"/>
+	</dct:isPartOf>
+
+<!-- Reference to the external register on which this register relies on -->
+	<voaf:reliesOn rdf:resource="http://inspire.ec.europa.eu/codelist/LandCoverClassValue"/>
+
+<!-- Name of the register -->
+		<skos:prefLabel xml:lang="en">LISA Land Cover Class</skos:prefLabel>
+
+<!-- Register description -->
+		<skos:definition xml:lang="en">LISA Land cover code list or classification.</skos:definition>
+
+<!-- Register publisher / responsible / contact point -->
+	<dct:publisher>
+
+<!-- This is the URI for the organisation taken from the MDR Corporate Bodies register maintained by
+     the EU Publications Office: http://publications.europa.eu/mdr/authority/corporate-body/
+     These URIs should be used for EU institutions and bodies.
+     Organisation not included in the MDR Corporate Bodies register should use their official URI (e.g.,
+     maintained by a national register), if any or use a well defined URI-pattern (an example could be a
+	 DBpedia URI)  
+-->
+		<foaf:Agent rdf:about="http://ccca.ac.at">
+			<foaf:name xml:lang="en">CCCA Data Centre</foaf:name>
+			<foaf:mbox rdf:resource="mailto:chris.schubert@ccca.ac.at"/>
+			<foaf:homepage rdf:resource="http://ccca.ac.at"/>
+		</foaf:Agent>
+		
+	</dct:publisher>
+
+</rdf:Description>
+
+<!-- Items defined in this register -->
+
+	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_Abiotic">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+		<skos:prefLabel xml:lang="en">abiotic</skos:prefLabel>
+		<skos:prefLabel xml:lang="de">nicht vegetationsbedeckt</skos:prefLabel>
+		<skos:definition xml:lang="en">Any unvegetated surfaces, either covered with man-made artificial structures or geologically natural material surfaces (with or without anthropogenic influence or impact).</skos:definition>
+		<skos:definition xml:lang="de">Flächen, die keine Vegetationsbedeckung aufweisen (abiotisch).</skos:definition>
+		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_Biotic">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+    	<skos:prefLabel xml:lang="en">biotic</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">vegetationsbedeckt</skos:prefLabel>
+    	<skos:definition xml:lang="en">Biotic surfaces have to be differentiated according to their attributes (e.g. coniferous percentage, biomass density, wetness, etc.).</skos:definition>
+   		<skos:definition xml:lang="de">Flächen mit einer Vegetationsbedeckung (biotisch).</skos:definition>
+		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_1_BuiltUp">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+    	<skos:prefLabel xml:lang="en">built-up</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">befestigte Fläche</skos:prefLabel>
+    	<skos:definition xml:lang="en">All Surfaces where Landscape has been changed by or is under influence of human construction activities by replacing natural surfaces with artificial abiotic 2D/3D constructions or artificial materials. Artificial parts of urban and suburban areas, where mankind has settled with permanent settlement infrastructures, also the settlement parts of rural areas, built-up areas (buildings, other constructions and sealed flat surfaces) and non-built-up areas (no buildings, artificial and unsealed).</skos:definition>
+    	<skos:definition xml:lang="de">Befestigte Flächen sind charakterisiert durch eine dauerhafte befestigte Abdeckung des Erdbodens.</skos:definition>
+   		<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_Abiotic" />
+		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_2_NonBuiltUp">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+		<skos:prefLabel xml:lang="en">non built-up</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">nicht befestigte Fläche</skos:prefLabel>
+    	<skos:definition xml:lang="en">Any kind of surface material which remains in its natural consistence or form either with or without anthropogenic influence. Consolidated and unconsolidated surfaces.</skos:definition>
+    	<skos:definition xml:lang="de">Flächen, die durch keine anthropogen erzeugte dauerhaft befestigte Abdeckungs des Erdbodens charakterisiert sind.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_Abiotic" />
+		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_3_Water">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+	    <skos:prefLabel xml:lang="en">water</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Wasser</skos:prefLabel>
+    	<skos:definition xml:lang="en">The chemical substance of water (H2O), either in liquid or in frozen solid state of aggregation.</skos:definition>
+    	<skos:definition xml:lang="de">Die Landbedeckung Wasser wird nach ihren Aggregatzuständen unterschieden.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_Abiotic" />
+		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_Woody">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+    	<skos:prefLabel xml:lang="en">woody</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">verholzt</skos:prefLabel>
+    	<skos:definition xml:lang="en">Areas that are covered with woody plants.</skos:definition>
+    	<skos:definition xml:lang="de">Flächen die durch verholzte Pflanzen bedeckt sind.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_Biotic" />
+		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_5_Herbaceous">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+		<skos:prefLabel xml:lang="en">herbaceous</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">nicht verholzt</skos:prefLabel>
+  		<skos:definition xml:lang="en">Areas that are not covered with woody plants.</skos:definition>
+    	<skos:definition xml:lang="de">Flächen, die von nicht verholzter Vegetation bedeckt sind.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_Biotic" />
+	    <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_1_1_Building">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+	    <skos:prefLabel xml:lang="en">building</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Gebäude</skos:prefLabel>
+    	<skos:definition xml:lang="en">Roof-covered constructions like single buildings or block of buildings with a significant height difference from the surrounding surface.</skos:definition>
+    	<skos:definition xml:lang="de">Überdachte, auf Dauer errichtete Bauwerke, die geeignet oder bestimmt sind, dem Schutz oder der Unterbringung von Menschen, Tieren oder Sachen zu dienen.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_1_BuiltUp" />
+	    <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_1_2_OtherConstructedArea">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+    	<skos:prefLabel xml:lang="en">other constructed area</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">sonstige befestigte Fläche</skos:prefLabel>
+    	<skos:definition xml:lang="en">Flat surfaces covered by any type of impervious material which that is used for artificial surface pavements (e.g. asphalt, concrete, tarmacadam).</skos:definition>
+    	<skos:definition xml:lang="de">Künstlich angelegte, ganz oder teilweise versiegelte Flächen, insbesondere asphaltierte, betonierte, bekieste, geschotterte,  gemergelte sowie mit Steinen oder Platten belegte Böden (© Schweizer Arealstatistik).</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_1_BuiltUp" />
+		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_2_3_PermanentBareSoil">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+ 	    <skos:prefLabel xml:lang="en">permanent bare soil</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">offener Boden (dauerhaft)</skos:prefLabel>
+    	<skos:definition xml:lang="en">Mixture of mineral and organic material that is capable of sustaining plant life, but being unvegetated at the moment of observation (primarily bare arable land).</skos:definition>
+    	<skos:definition xml:lang="de">Nicht vegetationsbedeckter, offener Boden.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_2_NonBuiltUp" />
+		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_2_4_Screes">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+  	    <skos:prefLabel xml:lang="en">screes</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Schotter</skos:prefLabel>
+   		<skos:definition xml:lang="en">Screes come to be through physical disintegration of geological formations and are the result of becoming smaller and smaller along time. They are accumulated on site due to sedimentary processes or human activity. Further subdivision is made according to their particle size and constellation.</skos:definition>
+    	<skos:definition xml:lang="de">Schutt und Sand: Lockersedimente wie Schuttfluren, Geröllfelder, Schotterflächen und sandige Bereiche bis hin zu Geröll (bis ca. max. 2 m Durchmesser) ohne erkennbare Beimischung von Humus. Der Vegetationsanteil beträgt maximal 10 Percent.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_2_NonBuiltUp" />
+	    <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_2_5_BareRock">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+    	<skos:prefLabel xml:lang="en">bare rock</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Fels</skos:prefLabel>
+    	<skos:definition xml:lang="en">The rock surface is continuous except perhaps for a few cracks in the material. Some areas may be covered by shallow layers of soil or there could be isolated pockets of soil or a mixture of both.</skos:definition>
+    	<skos:definition xml:lang="de">Felsen und anstehendes festes Gestein. Anhäufungen von Gestein (Gesteinsfelder) werden ab einem durchschnittlichen Durchmesser von 2m als „Fels/Gestein“ ausgewiesen, darunter als „Schotter/Sand“.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_2_NonBuiltUp" />
+ 	    <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_3_6_SurfaceWater">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+	    <skos:prefLabel xml:lang="en">surface water</skos:prefLabel>
+ 	  	<skos:prefLabel xml:lang="de">Wasseroberfläche</skos:prefLabel>
+  	  	<skos:definition xml:lang="en">All kinds of inland surface water with no direct interference or interchange with open sea water.</skos:definition>
+    	<skos:definition xml:lang="de">Offene Wasserflächen von stehenden und fließenden Gewässern. Bei teilweise überschirmten Gewässern (kleinere Bachläufe) wird nur die tatsächliche luftbildsichtbare Wasserfläche ausgewiesen – es sei denn, daß Laserscanning Daten eine leichte und automatisierte Differenzierung auch überschirmter Wasserflächen gestatten.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_3_Water"/>
+    	<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_3_7_SnowIce">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+	    <skos:prefLabel xml:lang="en">snow/ice</skos:prefLabel>
+ 	   	<skos:prefLabel xml:lang="de">Schnee und Eis</skos:prefLabel>
+    	<skos:definition xml:lang="en">Snow and Ice (solid aggregated water).</skos:definition>
+  		<skos:definition xml:lang="de">Schnee und Eis (verfestigtes Wasser).</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_3_Water" />
+		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_3_7_1_Snow">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+ 	    <skos:prefLabel xml:lang="en">snow</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Schnee</skos:prefLabel>
+    	<skos:definition xml:lang="en">Permanent snow in alpine areas. Temporary snow coverage must not be mapped.</skos:definition>
+    	<skos:definition xml:lang="de">Die Schneebedeckung ist naturgemäß in erster Linie vom Zeitpunkt der Aufnahme mittels Fernerkundungsdaten abhängig. Jedoch stellt sie sowohl in Luft- als auch in Satellitenbildern eine relativ einfach zu differenzierende Landbedeckungsklasse dar. Schnee überdeckt eine andere Landbedeckungsklasse, die aber zum Zeitpunkt der Aufnahme eben nicht feststellbar ist, sofern keine Information aus einer Vorperiode zur Verfügung steht. Vielfach befinden sich auch Eisflächen (Gletscher) unter dem Schnee.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_3_7_SnowIce"/>
+		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_3_7_2_Ice">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+ 	    <skos:prefLabel xml:lang="en">ice</skos:prefLabel>
+ 	   	<skos:prefLabel xml:lang="de">Eis</skos:prefLabel>
+ 	   	<skos:definition xml:lang="en">Glaciers in alpine zones.</skos:definition>
+    	<skos:definition xml:lang="de">Vorwiegend mit Gletscher und Firn bedeckte Flächen.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/1_3_7_SnowIce"/>
+	    <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_9_Trees">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   		<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+	    <skos:prefLabel xml:lang="en">trees</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">bestockte Fläche</skos:prefLabel>
+    	<skos:definition xml:lang="en">Trees with a minimum crown coverage: 10% (measured as stem-to-stem distance of 10m)</skos:definition>
+    	<skos:definition xml:lang="de">Mit bestockter Fläche werden innerhalb von LISA sämtliche mit  verholzten Pflanzen (Bäumen oder Gebüschen) bestockte Flächen definiert. Die Höhe von bestockten Flächen ist >5 m (Ausnahme Jungwuchs und Dickungen – können auch kleiner als 5m sein, und werden daher in der Landbedeckung trotzdem zu Klasse „bestockte Fläche“ gezählt!).</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_Woody" />
+	    <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_9_1_DeciduousTrees">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+ 	    <skos:prefLabel xml:lang="en">deciduous trees</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Laubbäume</skos:prefLabel>
+  		<skos:definition xml:lang="en">no definition availabe yet</skos:definition>
+  		<skos:definition xml:lang="de">Keine Definition verfügbar</skos:definition>
+  		<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_9_Trees" />
+  		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/submitted" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_9_2_MixedTrees">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+	    <skos:prefLabel xml:lang="en">mixed trees</skos:prefLabel>
+ 	   	<skos:prefLabel xml:lang="de">Mischung Laub/Nadel</skos:prefLabel>
+  		<skos:definition xml:lang="en">no definition availabe yet</skos:definition>
+  		<skos:definition xml:lang="de">Keine Definition verfügbar</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_9_Trees" />
+  		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/submitted" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_9_3_ConiferousTrees">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+ 	    <skos:prefLabel xml:lang="en">coniferous trees</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Nadelbäume</skos:prefLabel>
+  		<skos:definition xml:lang="en">no definition availabe yet</skos:definition>
+  		<skos:definition xml:lang="de">Keine Definition verfügbar</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_9_Trees" />
+ 	    <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_10_Bushes">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+	    <skos:prefLabel xml:lang="en">bushes</skos:prefLabel>
+  	  	<skos:prefLabel xml:lang="de">Gebüsch</skos:prefLabel>
+    	<skos:definition xml:lang="en">Woody plants with a height between 0,5 and 5m.</skos:definition>
+    	<skos:definition xml:lang="de">Mit Krummholzbestände (z.B. Latsche), Büschen (z.B. Grünerle), Sträuchern (z.B. Hecken) bewachsene Flächen. Die Höhe liegt unter 5 m aber fast immer über 0,5 m. Der Deckungsgrad mit Gebüschen liegt dabei &gt;50 percent. Jungwuchs und Dickungen mit einer Höhe &lt; 5 m fallen ebenfalls in diese Klasse.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_Woody" />
+	    <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_11_DwarfShrubs">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+	    <skos:prefLabel xml:lang="en">dwarf shrubs</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Zwergstrauch</skos:prefLabel>
+    	<skos:definition xml:lang="en">Woody plants with a height between 0,2 and 0,5m.</skos:definition>
+    	<skos:definition xml:lang="de">Flächige Bestände von v.a. Alpenrose und anderen Zwergsträuchern (Schwarzbeere, Preiselbeere, Rauschbeere). Zwergsträucher sind zwischen 10 cm und 40 cm hoch, wintergrün und meist als Sukzessionsstadien nach der Aufgabe von Almweide zu finden. Sie können mit Almweideflächen in enger Verzahnung auftreten.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_4_Woody" />
+	    <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_5_12_Herbaceous">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+    	<skos:prefLabel xml:lang="en">herbaceous</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Grünbewuchs</skos:prefLabel>
+    	<skos:definition xml:lang="en">This large class contains all kind of arable crops, pastures, meadows and natural grasslands. As for bare soil it is in the context of agricultural use not essential to assign the object the correct class, as the class of an object is a rather random issue depending on the acquisition date. However it is important to differentiate objects of the same class, if they are located next to each other, and if they can differentiate according to their vegetation index and physiognomic appearance.</skos:definition>
+    	<skos:definition xml:lang="de">Sämtliche mit sichtbarer niedriger Vegetation (Gras oder Krautvegetation) bedeckte Flächen. Die innere Differenzierung des Grünbewuchse („einzelne Schläge als getrennte Segmente“ – Landschaftsstruktur) ist dabei mitzuerfassen.  Der Deckungsgrad durch oberirdische Pflanzenteile muß mindestens 10% innerhalb der Referenzfläche einnehmen.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_5_Herbaceous" />
+    	<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_5_12_1_HerbaceousPermanent">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+    	<skos:prefLabel xml:lang="en">herbaceous permanent</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Grünbewuchs dauerhaft</skos:prefLabel>
+    	<skos:definition xml:lang="en">Herbeceous vegetation that is permanently covered with vegetation throughout a year.</skos:definition>
+    	<skos:definition xml:lang="de">Flächen, die über ein ganzes Jahr hinweg durch Grünbewuchs bedeckt sind und keine unterjährliche Bodenbearbeitung auzfweisen.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_5_12_Herbaceous" />
+	    <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_5_12_2_HerbaceousPeriodically">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+    	<skos:prefLabel xml:lang="en">herbaceous periodically</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Grünbewuchs periodisch</skos:prefLabel>
+    	<skos:definition xml:lang="en">Herbeceous vegetation that is not permanently covered with vegetation throughout a year. Bare soil can be observed at least once per year.</skos:definition>
+    	<skos:definition xml:lang="de">Flächen, die im Laufe eines Jahres zumindest einmal eine Bodenbearbeitung aufweisen.</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_5_12_Herbaceous" />
+    	<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+
+  	<rdf:Description rdf:about="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_5_13_Reeds">
+    	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    	<skos:inScheme rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue"/>
+    	<skos:prefLabel xml:lang="en">reeds</skos:prefLabel>
+    	<skos:prefLabel xml:lang="de">Schilf</skos:prefLabel>
+    	<skos:definition xml:lang="en">Reed is a common name for several tall, grass-like plants of wetlands. They are all members of the order Poales (in the modern, expanded circumscription) (© wikipedia).</skos:definition>
+    	<skos:definition xml:lang="de">Schilf kommt in größerem Ausmaß z.B. im Schilfgürtel des Neusiedler Sees vor und ist spektral eindeutig von anderen Klassen zu unterscheiden. Kleinsträumig ist Schilf mit Wasserflächen assoziiert (MVU = 500 m²).</skos:definition>
+    	<skos:broader rdf:resource="http://registry.inspire.gv.at/codelist/LISALandCoverClassValue/2_5_Herbaceous" />
+		<adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid" />
+  	</rdf:Description>
+	
+<!-- Externally defined Items
+
+	<rdf:Description  rdf:about="http://inspire.ec.europa.eu/codelist/DesignationSchemeValue/emeraldNetwork">
+		<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/inspire/DesignationSchemeValue"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/DesignationSchemeValue/IUCN">
+		<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/inspire/DesignationSchemeValue"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/DesignationSchemeValue/nationalMonumentsRecord">
+		<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/inspire/DesignationSchemeValue"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/DesignationSchemeValue/natura2000">
+		<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/inspire/DesignationSchemeValue"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/DesignationSchemeValue/ramsar">
+		<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/inspire/DesignationSchemeValue"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/DesignationSchemeValue/UNESCOManAndBiosphereProgramme">
+		<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/inspire/DesignationSchemeValue"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://inspire.ec.europa.eu/codelist/DesignationSchemeValue/UNESCOWorldHeritage">
+		<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/inspire/DesignationSchemeValue"/>
+	</rdf:Description> -->
+
+</rdf:RDF>
